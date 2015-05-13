@@ -2,10 +2,12 @@ import React from "react";
 import Router, {Route, DefaultRoute} from "react-router";
 import Application from "./Application";
 import Home from "./Home";
+import Test from "./Test";
 
 const routes = (
   <Route name="app" path="/" handler={Application} >
-    <DefaultRoute handler={Home} />
+    <Route path='/test' handler={Test} />
+    <DefaultRoute name="home" handler={Home} />
   </Route>
   );
 

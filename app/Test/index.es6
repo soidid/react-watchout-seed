@@ -1,7 +1,8 @@
 import React from "react";
+import { Link } from "react-router";
 
 export default React.createClass({
-  displayName: "Home",
+  displayName: "Test",
 
   getInitialState () {
     return {
@@ -10,14 +11,11 @@ export default React.createClass({
   },
 
   render() {
-    var img = require("./test.png");
+
     return (
       <div>
-        xoxo
-        <img src={img} />
-        <div onClick={this.handleClick}>
-          Click: {this.state.count}
-        </div>
+       TEST !
+       <Link to="home">HOME</Link>
       </div>
     );
   },
